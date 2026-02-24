@@ -2,6 +2,7 @@
 window.addEventListener('load', function() {
   load();
 });
+
 buyOpen.addEventListener('click', () => {
     buyPage = 1;
     reloadOfBuy();
@@ -165,6 +166,9 @@ makeAll.addEventListener('click', () => {
     //作れるなら作れる分作る
 });
 
+save.addEventListener('click', () => {
+  alert(money+'/'+level+'/'+sold+'/'+levelUp+'/'+JSON.stringify(buyDisplay)+'/'+JSON.stringify(makeDisplay));
+});
 //ゲームループ
 setInterval(() => {
     reloadOfDisplay();
