@@ -175,7 +175,7 @@ loadElm.addEventListener('click', () => {
   let data = prompt('セーブデータを入力してください');
   let items = data.split('*');
   if (items.length === 6) {
-    const [money, level, sold, levelUp, buyDisplay, makeDisplay] = items;
+    [money, level, sold, levelUp, buyDisplay, makeDisplay] = items;
     buyDisplay = JSON.parse(buyDisplay);
     makeDisplay = JSON.parse(makeDisplay);
   } else {
